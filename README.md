@@ -1,4 +1,4 @@
-![Logo](https://github.com/user-attachments/assets/c2fad648-37d3-4cab-ae4b-2394bfeda9e1)
+![Logo_med](https://github.com/user-attachments/assets/24b9b811-fe9d-4320-91bc-84ac56c71057)
 
 # Microsoft Security Products
 
