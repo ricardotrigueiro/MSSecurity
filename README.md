@@ -1,5 +1,265 @@
 ![image](https://github.com/user-attachments/assets/450e4dbe-c88b-4f53-bcc6-96457fdc8526)
 
+# Microsoft Security Products
+
+Modern Work Security
+​​​​​
+
+
+Microsoft Defender XDR 
+(Microsoft 365 Defender)​​​​​​​​​​​​​​​​​​​​​​​​
+
+
+
+Defender for Endpoint
+​​​​​​​​​​​​​​
+
+
+
+Defender for Office 365
+​​​​​​​
+
+
+
+Defender for Cloud Apps​​​​​​​
+​​​​​​​
+
+
+
+Defender for Identity
+ 
+
+
+
+Defender Vulnerability
+​​​​​​​Management
+
+
+
+Microsoft 365 Business
+​​​​​​​Premium Security
+
+
+
+Defender for Business
+​​​​​​​
+
+
+
+Microsoft 365 Lighthouse
+ 
+
+
+
+​​​​​​​Intune & Device
+​​​​​​Management
+ 
+
+​​​​​​​Azure Security
+​​​​​​​
+
+
+Azure Network Security
+ 
+
+
+
+​​​​​​​Azure Monitor
+ 
+
+
+
+Azure Policy
+​​​​​​​
+
+
+
+Azure Arc
+​​​​​​​​​​​​​​
+
+
+
+Azure KeyVault
+ 
+
+
+image
+Azure Confidential Computing
+ 
+
+
+
+Azure Lighthouse
+ 
+
+ 
+
+Multi-Cloud & IaaS/PaaS Security
+ 
+
+
+Microsoft Sentinel
+ 
+
+
+
+Defender for Cloud​​​​​​​
+ 
+
+
+
+Defender for Servers​​​​​​
+​​​​​​​​​​​​​​​​​
+
+
+
+Defender for Databases
+​​​​​​​
+
+
+
+Defender for DevOps
+​​​​​​​​​​​​​​
+
+
+
+Defender for IoT
+​​​​​​​
+
+
+
+Defender External Attack 
+Surface Management​​​​
+
+
+
+Defender Threat
+​​​​​​​Intelligence​​​​​​​​​​​​​​​​​​​​​
+
+
+
+Defender for APIs NEW
+
+​​​​​​​Compliance & Privacy
+​​​​​
+
+
+Microsoft Purview
+Information Protection
+
+
+
+Microsoft Purview
+Data Loss Prevention​​​​​​​​​​​​​
+
+
+
+Microsoft Purview Insider 
+Risk Management
+
+
+
+Microsoft Purview
+eDiscovery​​​​​​​​​​​​​
+
+
+
+Purview Data Lifecycle and 
+Records Management
+
+
+
+Microsoft Purview Data Map 
+and DataCatalog
+
+
+
+Microsoft Purview
+Compliance Manager​​​​​​​
+
+
+
+Microsoft Priva
+
+Identity & Access Management
+ 
+
+
+Entra ID (Azure AD)
+​​​​​​​​​​​​​​
+
+
+
+Entra Conditional
+Access
+
+
+
+Entra Passwordless
+​​​​​​​
+
+
+
+Entra ID ​​​​​​​Protection​​​​​
+ 
+
+
+
+Entra External 
+​​​​​​​Identities
+
+
+
+Entra Permissions
+Management
+
+
+
+Entra Verified ID
+​​​
+
+
+
+Entra Workload
+Identities​​​​​​​​​​​​​​​​​​​ 
+
+
+
+Entra Identity
+​​​​​​​Governance
+
+
+Privileged Identity Management Archives - Bloggerz.cloud
+Entra ID Governance: PIM
+ 
+
+
+
+Entra Global ​​​​​​​Secure 
+Access
+
+
+
+Multi-Tenant Organization NEW
+ 
+
+​​​​​​​AI & Copilot Security
+​​​​​​​ 
+
+
+Microsoft Copilot for Security
+ 
+
+
+File:Microsoft 365 Copilot Icon.svg - Wikipedia
+Microsoft 365 Copilot Security
+ 
+
+
+
+Azure OpenAI Security
+ 
+
 # 🚀 Cybersecurity for Beginners -
 -
 In this rapidly changing age of AI technology adoption, it is even more critical to understand how to secure IT systems. This course is designed to teach you fundamental cyber security concepts to kick-start your security learning. It is vendor agnostic and is divided into small lessons that should take around 30-60 mins to complete. Each lesson has a small quiz and links to further reading if you want to dive into the topic a bit more.
