@@ -2,12 +2,9 @@
 
 # Microsoft Security Products
 
-Modern Work Security
+## Modern Work Security
 ​​​​​
-
-
-Microsoft Defender XDR 
-(Microsoft 365 Defender)​​​​​​​​​​​​​​​​​​​​​​​​
+![image](https://github.com/user-attachments/assets/51476830-7d72-4017-aa1f-1d5a132b1c71) Microsoft Defender XDR  (Microsoft 365 Defender) ​​​​​​​​​​​​​​​​​​​​​​​
 
 
 
