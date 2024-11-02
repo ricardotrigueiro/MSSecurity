@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/450e4dbe-c88b-4f53-bcc6-96457fdc8526)
+
 # 🚀 Cybersecurity for Beginners – a curriculum
 
 In this rapidly changing age of AI technology adoption, it is even more critical to understand how to secure IT systems. This course is designed to teach you fundamental cyber security concepts to kick-start your security learning. It is vendor agnostic and is divided into small lessons that should take around 30-60 mins to complete. Each lesson has a small quiz and links to further reading if you want to dive into the topic a bit more.
