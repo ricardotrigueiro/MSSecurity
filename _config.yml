@@ -4,3 +4,5 @@ plugins:
 
 title: Microsoft Security repository
 description: Resource repository for Microosft Security, Compliance & Identity Management
+theme: jekyll-theme-minimal
+logo: /assets/img/logo.png
