@@ -1,334 +1,116 @@
-![Logo_med](https://github.com/user-attachments/assets/24b9b811-fe9d-4320-91bc-84ac56c71057)
+# The Minimal theme
 
-# Microsoft Security Products
+[![.github/workflows/ci.yaml](https://github.com/pages-themes/minimal/actions/workflows/ci.yaml/badge.svg)](https://github.com/pages-themes/minimal/actions/workflows/ci.yaml) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-minimal.svg)](https://badge.fury.io/rb/jekyll-theme-minimal)
 
-## Modern Work Security
-​​​​​
-![image](https://github.com/user-attachments/assets/51476830-7d72-4017-aa1f-1d5a132b1c71) Microsoft Defender XDR  (Microsoft 365 Defender) ​​​​​​​​​​​​​​​​​​​​​​​
+*Minimal is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/minimal), or even [use it today](#usage).*
 
+![Thumbnail of Minimal](thumbnail.png)
 
+## Usage
 
-Defender for Endpoint
-​​​​​​​​​​​​​​
+To use the Minimal theme:
 
+1. Add the following to your site's `_config.yml`:
 
+    ```yml
+    remote_theme: pages-themes/minimal@v0.2.0
+    plugins:
+    - jekyll-remote-theme # add this line to the plugins list if you already have one
+    ```
 
-Defender for Office 365
-​​​​​​​
+2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
 
+    ```ruby
+    gem "github-pages", group: :jekyll_plugins
+    ```
 
+## Customizing
 
-Defender for Cloud Apps​​​​​​​
-​​​​​​​
+### Configuration variables
 
+Minimal will respect the following variables, if set in your site's `_config.yml`:
 
+```yml
+title: [The title of your site]
+description: [A short description of your site's purpose]
+```
 
-Defender for Identity
- 
+Additionally, you may choose to set the following optional variables:
 
+```yml
+show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
+google_analytics: [Your Google Analytics tracking ID]
+```
 
+### Stylesheet
 
-Defender Vulnerability
-​​​​​​​Management
+If you'd like to add your own custom styles:
 
+1. Create a file called `/assets/css/style.scss` in your site
+2. Add the following content to the top of the file, exactly as shown:
+    ```scss
+    ---
+    ---
 
+    @import "{{ site.theme }}";
+    ```
+3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
-Microsoft 365 Business
-​​​​​​​Premium Security
+*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
 
+### Layouts
 
+If you'd like to change the theme's HTML layout:
 
-Defender for Business
-​​​​​​​
+1. For some changes such as a custom `favicon`, you can add custom files in your local `_includes` folder. The files [provided with the theme](https://github.com/pages-themes/minimal/tree/master/_includes) provide a starting point and are included by the [original layout template](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html).
+2. For more extensive changes, [copy the original template](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
+3. Create a file called `/_layouts/default.html` in your site
+4. Paste the default layout content copied in the first step
+5. Customize the layout as you'd like
 
+### Customizing Google Analytics code
 
+Google has released several iterations to their Google Analytics code over the years since this theme was first created. If you would like to take advantage of the latest code, paste it into `_includes/head-custom-google-analytics.html` in your Jekyll site.
 
-Microsoft 365 Lighthouse
- 
+### Overriding GitHub-generated URLs
 
+Templates often rely on URLs supplied by GitHub such as links to your repository or links to download your project. If you'd like to override one or more default URLs:
 
+1. Look at [the template source](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
+2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
+    ```yml
+    github:
+      zip_url: http://example.com/download.zip
+      another_url: another value
+    ```
+3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
 
-​​​​​​​Intune & Device
-​​​​​​Management
- 
+*Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`.*
 
-​​​​​​​Azure Security
-​​​​​​​
+For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
 
+## Roadmap
 
-Azure Network Security
- 
+See the [open issues](https://github.com/pages-themes/minimal/issues) for a list of proposed features (and known issues).
 
+## Project philosophy
 
+The Minimal theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
 
-​​​​​​​Azure Monitor
- 
+## Contributing
 
+Interested in contributing to Minimal? We'd love your help. Minimal is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
 
+### Previewing the theme locally
 
-Azure Policy
-​​​​​​​
+If you'd like to preview the theme locally (for example, in the process of proposing a change):
 
+1. Clone down the theme's repository (`git clone https://github.com/pages-themes/minimal`)
+2. `cd` into the theme's directory
+3. Run `script/bootstrap` to install the necessary dependencies
+4. Run `bundle exec jekyll serve` to start the preview server
+5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
 
+### Running tests
 
-Azure Arc
-​​​​​​​​​​​​​​
-
-
-
-Azure KeyVault
- 
-
-
-image
-Azure Confidential Computing
- 
-
-
-
-Azure Lighthouse
- 
-
- 
-
-Multi-Cloud & IaaS/PaaS Security
- 
-
-
-Microsoft Sentinel
- 
-
-
-
-Defender for Cloud​​​​​​​
- 
-
-
-
-Defender for Servers​​​​​​
-​​​​​​​​​​​​​​​​​
-
-
-
-Defender for Databases
-​​​​​​​
-
-
-
-Defender for DevOps
-​​​​​​​​​​​​​​
-
-
-
-Defender for IoT
-​​​​​​​
-
-
-
-Defender External Attack 
-Surface Management​​​​
-
-
-
-Defender Threat
-​​​​​​​Intelligence​​​​​​​​​​​​​​​​​​​​​
-
-
-
-Defender for APIs NEW
-
-​​​​​​​Compliance & Privacy
-​​​​​
-
-
-Microsoft Purview
-Information Protection
-
-
-
-Microsoft Purview
-Data Loss Prevention​​​​​​​​​​​​​
-
-
-
-Microsoft Purview Insider 
-Risk Management
-
-
-
-Microsoft Purview
-eDiscovery​​​​​​​​​​​​​
-
-
-
-Purview Data Lifecycle and 
-Records Management
-
-
-
-Microsoft Purview Data Map 
-and DataCatalog
-
-
-
-Microsoft Purview
-Compliance Manager​​​​​​​
-
-
-
-Microsoft Priva
-
-Identity & Access Management
- 
-
-
-Entra ID (Azure AD)
-​​​​​​​​​​​​​​
-
-
-
-Entra Conditional
-Access
-
-
-
-Entra Passwordless
-​​​​​​​
-
-
-
-Entra ID ​​​​​​​Protection​​​​​
- 
-
-
-
-Entra External 
-​​​​​​​Identities
-
-
-
-Entra Permissions
-Management
-
-
-
-Entra Verified ID
-​​​
-
-
-
-Entra Workload
-Identities​​​​​​​​​​​​​​​​​​​ 
-
-
-
-Entra Identity
-​​​​​​​Governance
-
-
-Privileged Identity Management Archives - Bloggerz.cloud
-Entra ID Governance: PIM
- 
-
-
-
-Entra Global ​​​​​​​Secure 
-Access
-
-
-
-Multi-Tenant Organization NEW
- 
-
-​​​​​​​AI & Copilot Security
-​​​​​​​ 
-
-
-Microsoft Copilot for Security
- 
-
-
-File:Microsoft 365 Copilot Icon.svg - Wikipedia
-Microsoft 365 Copilot Security
- 
-
-
-
-Azure OpenAI Security
- 
-
-# 🚀 Cybersecurity for Beginners -
--
-In this rapidly changing age of AI technology adoption, it is even more critical to understand how to secure IT systems. This course is designed to teach you fundamental cyber security concepts to kick-start your security learning. It is vendor agnostic and is divided into small lessons that should take around 30-60 mins to complete. Each lesson has a small quiz and links to further reading if you want to dive into the topic a bit more.
-
-![Cybersecurity for Beginners](images/banner.jpg)
-
-What this course covers 📚
-
-- 🔐 Basic cyber security concepts such as the CIA triad, the differences between risks, threats, etc,
-- 🛡️ Understanding what a security control is and what forms they take.
-- 🌐 Understanding what zero trust is and why this is important in modern cyber security.
-- 🔑 Understanding key concepts and themes across identity, networking, security operations, infrastructure and data security.
-- 🔧 Giving some examples of tools used to implement security controls.
-
-What this course does not cover 🙅‍♂️
-
-- 🚫 How to use specific security tools.
-- 🚫 How to "hack" or do red teaming/offensive security.
-- 🚫 Learning about specific compliance standards.
-
-[![Watch the video](images/intro_placeholder.png)](https://learn-video.azurefd.net/vod/player?id=a0fe1cef-c064-4d59-97a9-e89e12a99b4d)
-
-When you have finished this course, you can move onto some of our Microsoft Learn modules. We recommend you continue your learning with  [Microsoft Security, Compliance, and Identity Fundamentals.](https://learn.microsoft.com/training/paths/describe-concepts-of-security-compliance-identity/?WT.mc_id=academic-96948-sayoung) 
-
-Ultimately, you could consider taking the [Exam SC-900: Microsoft Security, Compliance, and Identity Fundamentals exam.](https://learn.microsoft.com/credentials/certifications/exams/sc-900/?WT.mc_id=academic-96948-sayoung)
-
-> 💁 If you have any feedback or suggestions on this course and any content we're missing, we'd love to hear from you!
-
-## Modules Overview 📝 
-| **Module number** | **Module name**                           | **Concepts taught**                  | **Learning objectives**                                                                                          |
-|-------------------|-------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| **1.1**           | Basic security concepts                   | [The CIA triad](https://github.com/microsoft/Security-101/blob/main/1.1%20The%20CIA%20triad%20and%20other%20key%20concepts.md)                        | Learn about confidentiality, availability and integrity. Also authenticity and also nonrepudiation and privacy. |
-| **1.2**           | Basic security concepts                   | [Common cyber security threats](https://github.com/microsoft/Security-101/blob/main/1.2%20Common%20cybersecurity%20threats.md)        | Learn about the common cyber security threats facing individuals and organizations.                             |
-| **1.3**           | Basic security concepts                   | [Understanding risk management](https://github.com/microsoft/Security-101/blob/main/1.3%20Understanding%20risk%20management.md)       | Learn about assessing and understanding risk – impact/likelihood and implementing controls.                                                                                                               | |
-| **1.4**           | Basic security concepts                   | [Security practices and documentation](https://github.com/microsoft/Security-101/blob/main/1.4%20Security%20practices%20and%20documentation.md) | Learn about the difference between policies, procedures, standards and regulations/laws.                         |
-| **1.5**           | Basic security concepts                   | [Zero trust](https://github.com/microsoft/Security-101/blob/main/1.5%20Zero%20trust.md)                           | Learn about what is zero trust and how does it affect architecture? What is defense in depth?                   |
-| **1.6**           | Basic security concepts                   | [The shared responsibility model](https://github.com/microsoft/Security-101/blob/main/1.6%20Shared%20responsibility%20model.md)                           | What is the shared responsibility model and how does it affect cyber security?                  |
-| **1.7**           | [End of module quiz](https://github.com/microsoft/Security-101/blob/main/1.7%20End%20of%20module%20quiz.md)                        |                                      |                                                                                                                 |
-| **2.1**           | Identity & access management fundamentals | [IAM key concepts](https://github.com/microsoft/Security-101/blob/main/2.1%20IAM%20key%20concepts.md)                     | Learn about the principle of least privilege, segregation of duties, how IAM supports zero trust.               |
-| **2.2**           | Identity & access management fundamentals | [IAM zero trust architecture](https://github.com/microsoft/Security-101/blob/main/2.2%20IAM%20zero%20trust%20architecture.md)          | Learn about how identity is the new perimeter for modern IT environments and the threats it mitigates.          |
-| **2.3**           | Identity & access management fundamentals | [IAM capabilities](https://github.com/microsoft/Security-101/blob/main/2.3%20IAM%20capabilities.md)                     | Learn about IAM capabilities and controls to secure identities                                                  |
-| **2.4**           | [End of module quiz](https://github.com/microsoft/Security-101/blob/main/2.4%20End%20of%20module%20quiz.md)                        |                                      |                                                                                                                 |
-| **3.1**           | Network security fundamentals             | [Networking key concepts](https://github.com/microsoft/Security-101/blob/main/3.1%20Networking%20key%20concepts.md)              | Learn about networking concepts (IP addressing, port numbers, encryption, etc.)                                 |
-| **3.2**           | Network security fundamentals             | [Networking zero trust architecture](https://github.com/microsoft/Security-101/blob/main/3.2%20Networking%20zero%20trust%20architecture.md)   | Learn about how networking contributes to an E2E ZT architecture and the threats it mitigates.                  |
-| **3.3**           | Network security fundamentals             | [Network security capabilities](https://github.com/microsoft/Security-101/blob/main/3.3%20Network%20security%20capabilities.md)        | Learn about network security tooling – firewalls, WAF, DDoS protection, etc.                                    |
-| **3.4**           | [End of module quiz](https://github.com/microsoft/Security-101/blob/main/3.4%20End%20of%20module%20quiz.md)                        |                                      |                                                                                                                 |
-| **4.1**           | Security operations fundamentals          | [SecOps key concepts](https://github.com/microsoft/Security-101/blob/main/4.1%20SecOps%20key%20concepts.md)                  | Learn about why security operations are important and how it differs from normal IT ops teams.                  |
-| **4.2**           | Security operations fundamentals          | [SecOps zero trust architecture](https://github.com/microsoft/Security-101/blob/main/4.2%20SecOps%20zero%20trust%20architecture.md)       | Learn about how SecOps contributes to an E2E ZT architecture and the threats it mitigates.                      |
-| **4.3**           | Security operations fundamentals          | [SecOps capabilities](https://github.com/microsoft/Security-101/blob/main/4.3%20SecOps%20capabilities.md)                  | Learn about SecOps tooling – SIEM, XDR, etc.                                                                    |
-| **4.4**           | [End of module quiz](https://github.com/microsoft/Security-101/blob/main/4.4%20End%20of%20module%20quiz.md)                        |                                      |                                                                                                                 |
-| **5.1**           | Application security fundamentals         | [AppSec key concepts](https://github.com/microsoft/Security-101/blob/main/5.1%20AppSec%20key%20concepts.md)                  | Learn about AppSec concepts such as secure by design, input validation, etc.                                    |
-| **5.2**           | Application security fundamentals         | [AppSec capabilities](https://github.com/microsoft/Security-101/blob/main/5.2%20AppSec%20key%20capabilities.md)                  | Learn about AppSec tooling: pipeline security tools, code scanning, secret scanning, etc.                       |
-| **5.3**           | [End of module quiz](https://github.com/microsoft/Security-101/blob/main/5.3%20End%20of%20module%20quiz.md)                        |                                      |                                                                                                                 |
-| **6.1**           | Infrastructure security fundamentals      | [Infrastructure security key concepts](https://github.com/microsoft/Security-101/blob/main/6.1%20Infrastructure%20security%20key%20concepts.md) | Learn about hardening systems, patching, security hygiene, container security.                                  |
-| **6.2**           | Infrastructure security fundamentals      | [Infrastructure security capabilities](https://github.com/microsoft/Security-101/blob/main/6.2%20Infrastructure%20security%20capabilities.md) | Learn about tooling that can assist with infrastructure security e.g. CSPM, container security, etc.            |
-| **6.3**           | [End of module quiz](https://github.com/microsoft/Security-101/blob/main/6.3%20End%20of%20module%20quiz.md)                        |                                      |                                                                                                                 |
-| **7.1**           | Data security fundamentals                | [Data security key concepts](https://github.com/microsoft/Security-101/blob/main/7.1%20Data%20security%20key%20concepts.md)           | Learn about data classification and retention and why this is important to an organization.                     |
-| **7.2**           | Data security fundamentals                | [Data security capabilities](https://github.com/microsoft/Security-101/blob/main/7.2%20Data%20security%20capabilities.md)           | Learn about data security tooling – DLP, inside risk management, data governance, etc.                          |
-| **7.3**           | [End of module quiz](https://github.com/microsoft/Security-101/blob/main/7.3%20End%20of%20module%20quiz.md)                        |
-| **8.1**           | AI security fundamentals                | [AI security key concepts](https://github.com/microsoft/Security-101/blob/main/8.1%20AI%20security%20key%20concepts.md)          | Learn about the differences and similarities between traditional security and AI security.                 |
-| **8.2**           | AI security fundamentals                | [AI security capabilities](https://github.com/microsoft/Security-101/blob/main/8.2%20AI%20security%20capabilities.md)           | Learn about AI security tooling and the controls that can be used to secure AI.                         |
-| **8.3**           | AI security fundamentals                | [Responsible AI](https://github.com/microsoft/Security-101/blob/main/8.3%20Responsible%20AI.md)          | Learn about what responsible AI is and AI specific harms that security professionals need to be aware of.                          |
-| **8.4**           | [End of module quiz](https://github.com/microsoft/Security-101/blob/main/8.4%20End%20of%20module%20quiz.md)     
-## 🎒  Other Courses 
-
-Our team produces other courses! Check out:
-
-- [ML for Beginners](https://aka.ms/ml-beginners?WT.mc_id=academic-96948-sayoung)
-- [Data Science for Beginners](https://aka.ms/datascience-beginners?WT.mc_id=academic-96948-sayoung)
-- [AI for Beginners](https://aka.ms/ai-beginners?WT.mc_id=academic-96948-sayoung)
-- [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-96948-sayoung)
-- [Web Dev for Beginners](https://aka.ms/webdev-beginners?WT.mc_id=academic-96948-sayoung)
-- [IoT for Beginners](https://aka.ms/iot-beginners?WT.mc_id=academic-96948-sayoung)
-- [XR Development for Beginners](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-96948-sayoung)
-- [Mastering GitHub Copilot for AI Paired Programming](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-96948-sayoung)
+The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.
