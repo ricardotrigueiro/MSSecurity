@@ -15,7 +15,7 @@ You're welcome to consume and contribute by sharing your references ;)
 
 ### Modern Work Security
 
-![XDR](./assets/icons/iconXDR.png) [Microsoft Defender XDR](./pXDR/readme.md).
+![XDR](./assets/icons/iconXDR.png) [Microsoft Defender XDR](./pXDR/page.html).
 
 ![MDE](./assets/icons/iconMDE.png) [Microsoft Defender for Endpoint](./pMDE/readme.md).
 
