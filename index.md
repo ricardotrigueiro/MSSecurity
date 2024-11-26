@@ -16,10 +16,15 @@ You're welcome to consume and contribute by sharing your references ;)
 ### Modern Work Security
 
 ![XDR](./assets/icons/iconXDR.png) [Microsoft Defender XDR](./pXDR/readme.md).
+
 ![MDE](./assets/icons/iconMDE.png) [Microsoft Defender for Endpoint](./pMDE/readme.md).
+
 ![MDO](./assets/icons/iconMDO.png) [Microsoft Defender for Office 365](./pMDO/readme.md).
+
 ![MDI](./assets/icons/iconMDI.png) [Microsoft Defender for Identity](./pMDI/readme.md).
+
 ![MDCA](./assets/icons/iconMDCA.png) [Microsoft Defender for Cloud Apps](./pMDCA/readme.md).
+
 
 ### Cloud Security and Security Operations
 
