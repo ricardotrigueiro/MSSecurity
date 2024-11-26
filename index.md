@@ -2,44 +2,31 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
-
 # Ricardo Trigueiro Microsoft Security Repository
 
 > Always pass on what you've learned
-> _Yoda_
+>
+> _Yoda_ 
 
 This repository aims to centralize all relevant resources regarding Microsoft Security products and features.
 You're welcome to consume and contribute by sharing your references ;)
 
 ## Security Products
 
-![XDR](./assets/icons/iconXDR.png) [Link to another page](./pXDR.md).
-
-
 ### Modern Work Security
 
+![XDR](./assets/icons/iconXDR.png) [Microsoft Defender XDR](./pXDR/readme.md).
+![MDE](./assets/icons/iconMDE.png) [Microsoft Defender for Endpoint](./pMDE/readme.md).
+![MDO](./assets/icons/iconMDO.png) [Microsoft Defender for Office 365](./pMDO/readme.md).
+![MDI](./assets/icons/iconMDI.png) [Microsoft Defender for Identity](./pMDI/readme.md).
+![MDCA](./assets/icons/iconMDCA.png) [Microsoft Defender for Cloud Apps](./pMDCA/readme.md).
+
+### Cloud Security and Security Operations
 
 
 
-### Header 3
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
 
 #### Header 4
 
