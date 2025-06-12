@@ -5,7 +5,10 @@ layout: default
 # Ricardo Trigueiro Microsoft Security Repository
 
 > Always pass on what you've learned
-> _Yoda_ 
+>
+> 
+> _Yoda_
+ 
 
 This repository aims to centralize all relevant resources regarding Microsoft Security products and features.
 You're welcome to consume and contribute by sharing your references ;)
