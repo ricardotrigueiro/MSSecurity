@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # Ricardo Trigueiro Microsoft Security Repository
 
 > "Always pass on what you've learned"
