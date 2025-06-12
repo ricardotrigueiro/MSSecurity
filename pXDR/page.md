@@ -1,8 +1,5 @@
 ## Microsoft Defender XDR
 
-![](assets/20250612_191703_XDR.png)
-
-
 aka Microsoft Defender 365
 
 
